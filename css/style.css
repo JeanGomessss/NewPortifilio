@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Simonetta&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(172, 47, 255); 
+    border-radius: 10px;
+  }
+
+body {
+    font-size: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Simonetta', cursive;
+}
+
+
+/* Início CSS Cabeçalho*/
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+}
+
+.menu-flutuante-texto {
+    font-family: 'Comforter', cursive;
+    font-weight: bold;
+    font-size:  30px;
+    letter-spacing: 2px;
+
+}
+
+.menu-navegacao {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+
+.menu-navegacao-item {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.destaque {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.destaque:hover {
+    background-color: white;
+    color: black;
+}
+
+.destaque-simples:hover {
+    color: gray;
+    border-bottom: 1px solid white;
+
+}
+
+.voltar-topo {
+    position: fixed;
+    bottom: 15px;
+    right:15px;
+}
+
+.voltar-topo img{
+    width:50px;
+    height:40px;
+    opacity: 50%;
+}
+
+.voltar-topo img:hover {
+    opacity: 100%;
+}
+/*Fim CSS cabeçalho*/
+
+/*Inicio CSS apresentação pessoal*/
+.sobre {
+    margin-bottom: 150px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    align-items: center;
+}
+
+.sobre-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-texto-titulo {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.sobre-texto-paragrafo {
+    font-size: 18px;
+    width: 450px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.sobre-texto-redes {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding: 35px;
+    gap: 20px
+}
+
+.sobre-texto-redes-imagem {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.linkedin:hover {
+    background-color: rgb(0, 81, 255);
+    transition: 0.3s;
+}
+
+.git:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.6s;
+}
+
+.wpp:hover {
+    background-color: rgb(53, 255, 34);
+    transition: 0.6s;
+}
+
+.sobre-texto-foto {
+    width: 600px;
+    border-radius: 70% 60% 90% 20%;
+    opacity: 70%;
+    background-color: white;
+    border: 5px solid white;
+}
+
+/*Fim CSS apresentação pessoal*/
+
+/*Inicio CSS apresentação Projetos*/
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.projetos-titulo {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 35px;
+    border-top: 1px solid
+}
+
+.projetos-desc {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.projetos-apresentacao {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(119, 113, 113, 0.329);
+}
+
+.projetos-apresentacao-reverso {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(119, 113, 113, 0.329);
+}
+
+.projetos-imagem {
+    object-fit: cover;
+    width: 40%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.projetos-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
+.projetos-info-titulo {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.projetos-info-desc {
+    line-height: 25px;
+}
+
+.projetos-info-link {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.projetos-info-link-item {
+    font-size: 20px;
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+
+.projetos-info-link-item:hover{
+    transition: 0.4s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
+
+/*Fim CSS Projetos*/
+
+/*Início CSS Certificados*/
+.certificados {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    margin-bottom: 180px;
+}
+
+.certificados-descricao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+}
+
+.certificados-descricao-titulo {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.certificados-descricao-paragrafo {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.certificados-link{
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px
+}
+
+.certificados-especialidades {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.certificados-especialidades-titulo {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.certificados-especialidades-imagem {
+    width: 70px;
+    opacity: 40%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.certificados-especialidades-imagem:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.rodape {
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .projetos-apresentacao {
+        flex-direction: column;
+        gap: 10px;
+        width: 500px;
+    }
+
+    .projetos-apresentacao-reverso {
+        flex-direction: column;
+        gap: 10px;
+        width: 500px;
+    }
+
+    .projetos-imagem {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    .sobre-texto-foto {
+        width: 350px
+    }
+
+    .certificados {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .certificados-descricao {
+        margin-bottom: 50px;
+    }
+
+    .projetos-desc {
+        width: 350px;
+    }
+
+    .sobre {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 510px) {
+    .menu-flutuante-texto{
+        font-size: 20px;
+    }
+
+    .menu-navegacao {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .menu-navegacao-item{
+        font-size: 15px;
+    }
+
+    .projetos-titulo{
+        font-size: 25px;
+    }
+
+    .projetos-desc{
+        font-size: 15px;
+    }
+
+    .sobre-texto-foto {
+        width: 200px;
+    }
+
+    .sobre-texto-titulo {
+        font-size: 40px;
+    }
+
+    .sobre-texto-paragrafo {
+        font-size: 15px;
+        width: 300px
+    }
+
+    .projetos-apresentacao, .projetos-apresentacao-reverso {
+        width: 350px;
+        padding: 0 0 10px 0;
+
+    }
+
+    .projetos-info-link-item {
+        font-size: 10px;
+    }
+
+    .projetos-info-titulo {
+        font-size: 20px;
+    }
+
+    .projetos-info-desc {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    .projetos-info {
+        width: 90%;
+    }
+
+    .projetos-imagem {
+        border-radius: 0;
+    }
+
+    .certificados-descricao-titulo {
+        font-size: 25px;
+    }
+
+    .certificados-descricao-paragrafo {
+        font-size: 15px;
+        width: 350px;
+    }
+
+    .certificados-link {
+        width: 300px;
+    }
+}
